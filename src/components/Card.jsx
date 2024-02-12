@@ -12,16 +12,16 @@ const Card = ({img, title, price=90 , Addonclick, Removeonclick}) => {
 
 
     return (
-        <div className='min-h-[52vh] w-[16vw] bg-red-500 border-8 rounded-lg border-red-500 overflow-hidden'>
+        <div className='h-[62vh] w-[16vw] bg-gray-500 border-8 rounded-lg border-gray-500 overflow-hidden'>
 
-            <div className='h-[30vh] w-full  '>
+            <div className='h-[30vh] w-full rounded-md  overflow-hidden '>
 
-                <img className='h-[100%] w-[100%] object-cover object-center hover:scale-110 ease-in-out duration-300' src={img} alt="" />
+                <img className='h-[100%] w-[100%] object-cover object-top hover:scale-110 ease-in-out duration-300' src={img} alt="" />
 
 
             </div>
 
-            <div className='text-white mt-4'>
+            <div className='h-[20vh] overflow-hidden text-white mt-4'>
                 <p className='text-xl font-semibold mb-2'>{title}</p>
                 <p className=''>{price}$</p>
             </div>

@@ -45,7 +45,7 @@ const Cart = () => {
 
 
                                     <div className='h-[100%]  flex items-center gap-5 '>
-                                        <img className='h-[100%] object-cover object-center' src={item.images} alt="" />
+                                        <img className='h-[100%] object-cover object-center' src={item.image} alt="" />
 
                                         <p className="font-bold text-xl">{item.title}</p>
                                     </div>

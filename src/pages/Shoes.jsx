@@ -23,7 +23,7 @@ const Shoes = () => {
 
   useEffect(() => {
 
-    fetch("https://api.escuelajs.co/api/v1/categories/4/products")
+    fetch("https://fakestoreapi.com/products")
       .then(res => res.json())
       .then(res => setShoeProducts(res));
 
@@ -133,7 +133,7 @@ className='mySwipper h-[100%]'
       key={item.id}
       title={item.title}
       price={item.price}
-      img={item.images}
+      img={item.image}
       Addonclick={() => dispatch(addToCart(item))}
       Removeonclick={() => dispatch(removeToCart(item.id))}
       />
